@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('backgroundfam.png');
+      	    background-position: center;
+            height: 500px;
+            position: relative;
+
+        }
+	header {
+            background-color:#696969;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background-color:#FFE4B5;
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .card-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .card-description {
+            font-size: 14px;
+            color: brown;
+            margin-bottom: 15px;
+        }
+        .card-button {
+            display: block;
+            text-align: center;
+            background-color:#FF7F50;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .card-button:hover {
+            background-color: #bc8a58;
+        }
+    </style>
+</head>
+<body>
+    <header>
+ 	<center><h1 style="font-family:verdana; color: white;"><u>My Family</u></h1></center>
+    </header>
+    <center><h4>I am one of three siblings, along with my younger brother, Aris Irfan, and my older sister, Nurul Fatihah. I also had a grandpa named Abdul Rahim.</h4></center>
+    <section class="container">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="family1.jpg" alt="Family 1">
+            <div class="card-content">
+                <h3 class="card-title">Aidilfitri Celebration</h3>
+                <p class="card-description">on 2023</p>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="family2.jpg" alt="Family 2">
+            <div class="card-content">
+                <h3 class="card-title">My parents</h3>
+                <p class="card-description">at Pantai Tanjung Dawai</p>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="family3.jpg" alt="Family 3">
+            <div class="card-content">
+                <h3 class="card-title">My sister's pre-convocation</h3>
+                <p class="card-description">at Taiping Lake Garden</p>
+            </div>
+        </div>
+    </section>
+	
+</body>
+</html>

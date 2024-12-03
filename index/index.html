@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Times New Roman;
+      background-image: url('backgroundind.jpg');
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 50px;
+      background-color: #2F4F4F;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;  /*Pastikan header di atas iframe */
+    }
+
+    header nav a {
+      margin: 15px;
+      color: #F5FFFA;
+      font-weight: bold;
+    }
+
+    header nav a:hover {
+      color: #007BFF;
+    }
+
+    .hero {
+      text-align: left;
+      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+      margin-top: 50px;
+      padding: 100px;
+      background-image: url('img_index.jpg');
+      background-size: 590px;
+      background-position: right;
+      color: white;
+      border: 4px solid #2F4F4F;
+      height: 600px;
+      position: relative;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 2rem;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100vh; /* Sesuaikan dengan ketinggian skrin */
+      border: none;
+      margin-top: 0;
+    }
+    footer {
+      background-color: #2F4F4F;
+      text-align: center;
+      padding: 10px;
+      color: white;
+      font-family: Arial, sans-serif;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" target="_parent">Home</a>      
+      <a href="biodata.html" target="middleFrame">Biodata</a>      
+      <a href="education.html" target="middleFrame">Education</a>
+      <a href="experience.html" target="middleFrame">Experience</a>
+      <a href="family.html" target="middleFrame">Family</a>
+      <a href="gallery.html" target="middleFrame">Gallery</a>
+      <a href="interest.html" target="middleFrame">Interest</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1><b>Hey, I'm Nurul Asyierah</b></h1>
+      <p style="color: gold;"><b>Welcome to my personal website ^_^</b></p>
+    </div>
+  </section>
+
+  <iframe name="middleFrame"></iframe> <!-- Frame untuk memaparkan halaman -->
+  <footer>
+    <p>Copyright Reserved &copy; 2024. Nurul Asyierah Mohd Zabidi.</p>
+  </footer>
+</body>
+</html>

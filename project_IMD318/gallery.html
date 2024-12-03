@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0; 
+	    font-family: Arial, sans-serif;
+	    background-image: url('backgroundgall.png');
+      	    background-position: center;
+            height: auto;
+            position: relative;
+	}
+	header {
+            background-color: #34495e;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+	    justify-content: center;            
+            gap: 15px;
+            margin: 20px;
+        }
+        .gallery img {
+            width: 300px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+	.video {
+            margin: 20px auto;
+	    text-align:center;
+        }
+        video {
+            width: 80%;
+            max-width: 500px;
+            border-radius: 8px;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <header>
+      <h1><u>My Gallery</u></h1>
+    </header>
+    <div class="gallery">
+        <img src="img1.jpg" alt="Gambar 1">
+        <img src="img2.jpg" alt="Gambar 2">
+        <img src="img4.jpg" alt="Gambar 3">
+        <img src="img5.jpg" alt="Gambar 4">
+        <img src="img6.jpg" alt="Gambar 5">
+	<img src="img7.jpg" alt="Gambar 6">
+	<img src="img8.jpg" alt="Gambar 7">
+	<img src="img9.jpg" alt="Gambar 8">
+	<img src="img10.jpg" alt="Gambar 9">
+	<img src="img11.jpg" alt="Gambar 10">
+	<img src="img13.jpg" alt="Gambar 11">
+	<img src="gif1.gif" alt="GIF Animation">
+    </div>
+    <div class="video">
+        <video controls>
+           <source src="video.mp4" type="video/mp4">
+        </video>
+        <div class="caption">
+           <h4 style="color: white";><i>Independence Day 2024 is officially in the books!</i></h4>
+        </div>
+    </div>
+</body>
+</html>
